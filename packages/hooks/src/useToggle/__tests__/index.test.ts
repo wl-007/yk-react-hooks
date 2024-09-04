@@ -9,7 +9,6 @@ const callToggle = (hook: any) => {
 
 describe('useToggle', () => {
   it('test on init', async () => {
-    console.log('ccccc');
     const hook = renderHook(() => useToggle());
     expect(hook.result.current[0]).toBeFalsy();
   });
